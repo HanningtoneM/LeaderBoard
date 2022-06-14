@@ -1,10 +1,6 @@
 import createElement from './helpers/createElement.js';
 
 export default () => {
-  const header = createElement('header', { class: 'header d-flex' });
-  const pageHeading = createElement('h1', {}, 'Leaderboard');
-  header.append(pageHeading);
-
   const main = createElement('main', { class: 'main d-flex' });
 
   const scoresDiv = createElement('div', { class: 'scores-div' });
@@ -38,5 +34,5 @@ export default () => {
   formDiv.append(formHeading, form);
 
   main.append(scoresDiv, formDiv);
-  document.body.append(header, main);
+  document.body.append(main);
 };
