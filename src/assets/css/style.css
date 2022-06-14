@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap');
+@import "reset.css";
+
+body {
+  font-family: 'Cormorant Upright', serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.header {
+  align-items: center;
+  height: 15vh;
+}
+
+.header,
+.main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 85vw;
+}
+
+.scores-div {
+  width: 50%;
+}
+
+.scores-div,
+.form-div {
+  padding: 20px;
+}
+
+.scores-div-header {
+  justify-content: space-between;
+}
+
+.score-list {
+  border: 2px solid;
+  margin-top: 1em;
+}
+
+.score-list,
+form {
+  flex-direction: column;
+}
+
+form {
+  align-items: flex-end;
+  margin-top: 1em;
+}
+
+.score-list li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.score-list li:nth-child(even) {
+  background-color: #eee;
+}
+
+input {
+  padding: 5px;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
