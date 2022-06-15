@@ -136,6 +136,10 @@ footer {
     padding: 20px;
     width: 50%;
   }
+
+  .scores-div {
+    box-shadow: 5px 10px 5px 10px lightgrey;
+  }
 }
 
 @media (max-width: 750px) {
@@ -148,6 +152,7 @@ footer {
   main {
     flex-direction: column-reverse;
     min-height: 100%;
+    box-shadow: 5px 10px 5px 10px lightgrey;
   }
 
   .header {
