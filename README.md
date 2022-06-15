@@ -6,19 +6,7 @@
 
 [Live Demo Link](https://hanningtonem.github.io/LeaderBoard/)
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm run start`
-
-Runs the app in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
-
-### `npm run build`
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ## Built With
 
@@ -35,6 +23,23 @@ To get a local copy up follow these simple example steps.
 2. Navigate to the location of the folder in your machine:
 
 **``you@your-Pc-name:~$ cd <folder>``**
+
+## After downloading:
+- Run npm install
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run start`
+
+Runs the app in the development mode.\
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+### `npm run build`
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 ### Prerequisites
 
