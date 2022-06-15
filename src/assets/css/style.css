@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap');
 @import "reset.css";
 
 body {
   font-family: 'Cormorant Upright', serif;
+  background-color: #f4f4f4;
 }
 
 h1 {
@@ -17,6 +19,11 @@ h3 {
   padding: 5px 0;
 }
 
+.scroll {
+  height: 40vh;
+  overflow: scroll;
+}
+
 .full-width {
   width: 100%;
 }
@@ -28,25 +35,14 @@ h3 {
 .header {
   align-items: center;
   height: 15vh;
+  border-bottom: 3px solid #988dae;
 }
 
 .header,
-.main {
-  width: 70vw;
+.main,
+footer {
   margin: 0 auto;
-}
-
-.main {
-  min-height: 85vw;
-}
-
-.scores-div {
-  width: 50%;
-}
-
-.scores-div,
-.form-div {
-  padding: 20px;
+  background-color: lightcyan;
 }
 
 .scores-div-header {
@@ -54,32 +50,147 @@ h3 {
 }
 
 .score-list {
-  border: 2px solid;
+  border: 2px solid #988dae;
+  background-color: aqua;
   margin-top: 1em;
+  min-height: 15vh;
 }
 
 .score-list,
+.form-div,
 form {
   flex-direction: column;
 }
 
+.form-div {
+  align-items: flex-start;
+  margin-left: 10%;
+}
+
 form {
   align-items: flex-end;
-  margin-top: 1em;
+  margin-top: 0.6em;
 }
 
 .score-list li {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 5px;
+  background-color: aqua;
 }
 
 .score-list li:nth-child(even) {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 input {
   padding: 5px;
   font-size: 1.2rem;
   margin: 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #808080;
+  font-family: 'Cormorant Upright', serif;
+}
+
+button,
+input[type=submit] {
+  background-color: aqua;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 8px 5px #808080;
+}
+
+button:hover,
+input[type=submit]:hover {
+  background-color: #f7f3ff;
+  box-shadow: 1.5px 1.5px #f4f4f4;
+}
+
+footer {
+  border-top: 2px solid #988dae;
+  padding: 15px 0;
+  text-align: center;
+}
+
+::placeholder {
+  font-family: 'Cormorant Upright', serif;
+  color: black;
+}
+
+@media (min-width: 750px) {
+  .main {
+    min-height: 78vh;
+  }
+
+  .header,
+  .main,
+  footer {
+    width: 60vw;
+  }
+
+  .scores-div,
+  .form-div {
+    padding: 20px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    margin: 1rem;
+    min-height: 100%;
+    background-color: lightcyan;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    min-height: 100%;
+  }
+
+  .header {
+    align-items: center;
+    border-bottom: 3px solid #988dae;
+  }
+
+  input {
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-top: auto;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #808080;
+  }
+
+  .scores-div {
+    max-width: 90%;
+    padding-top: 4rem;
+    margin: auto;
+  }
+
+  footer {
+    margin-top: 30%;
+  }
+
+  h3 {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .refresh-button {
+    padding: 15px 32px;
+    margin: 8px 4px;
+    margin-left: 30px;
+  }
+
+  .form-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 }
